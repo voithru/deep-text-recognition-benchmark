@@ -6,15 +6,15 @@ import math
 import lmdb
 import torch
 
-from augmentation.weather import Fog, Snow, Frost
-from augmentation.warp import Curve, Distort, Stretch
-from augmentation.geometry import Rotate, Perspective, Shrink, TranslateX, TranslateY
-from augmentation.pattern import VGrid, HGrid, Grid, RectGrid, EllipseGrid
-from augmentation.noise import GaussianNoise, ShotNoise, ImpulseNoise, SpeckleNoise
-from augmentation.blur import GaussianBlur, DefocusBlur, MotionBlur, GlassBlur, ZoomBlur
-from augmentation.camera import Contrast, Brightness, JpegCompression, Pixelate
-from augmentation.weather import Fog, Snow, Frost, Rain, Shadow
-from augmentation.process import Posterize, Solarize, Invert, Equalize, AutoContrast, Sharpness, Color
+from .augmentation.weather import Fog, Snow, Frost
+from .augmentation.warp import Curve, Distort, Stretch
+from .augmentation.geometry import Rotate, Perspective, Shrink, TranslateX, TranslateY
+from .augmentation.pattern import VGrid, HGrid, Grid, RectGrid, EllipseGrid
+from .augmentation.noise import GaussianNoise, ShotNoise, ImpulseNoise, SpeckleNoise
+from .augmentation.blur import GaussianBlur, DefocusBlur, MotionBlur, GlassBlur, ZoomBlur
+from .augmentation.camera import Contrast, Brightness, JpegCompression, Pixelate
+from .augmentation.weather import Fog, Snow, Frost, Rain, Shadow
+from .augmentation.process import Posterize, Solarize, Invert, Equalize, AutoContrast, Sharpness, Color
 
 from natsort import natsorted
 from PIL import Image
