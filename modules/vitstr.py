@@ -34,10 +34,10 @@ __all__ = [
     #'vitstr_base_distilled_patch16_224',
 ]
 
-def create_vitstr(num_tokens, model=None, checkpoint_path=''):
+def create_vitstr(num_tokens, model=None, checkpoint_path='', is_pretrained=False):
     vitstr = create_model(
         model,
-        pretrained=True,
+        pretrained=pretrained,
         num_classes=num_tokens,
         checkpoint_path=checkpoint_path)
 
