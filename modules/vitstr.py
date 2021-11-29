@@ -37,7 +37,7 @@ __all__ = [
 def create_vitstr(num_tokens, model=None, checkpoint_path='', is_pretrained=False):
     vitstr = create_model(
         model,
-        pretrained=pretrained,
+        pretrained=is_pretrained,
         num_classes=num_tokens,
         checkpoint_path=checkpoint_path)
 
